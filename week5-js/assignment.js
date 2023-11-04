@@ -46,8 +46,16 @@ function deepCopy(object) {
       copiedObject = {};
       // ...
       break;
-
+      
     default:
   }
   return copiedObject;
 }
+
+// 하드코딩을 지양하자. 
+// 1. 휴먼에러
+// 2. 변경사항에 따른 유지보수의 어려움
+
+// 1. 공식문서를 먼저 확인하자.
+// 2. 공식문서에서 어떤 정의를, 어떤 역할을, 어떤 기능을 수행하는지 확인할 수 있다.
+// 3. lodash 라는 라이브러리가 있는데, 여기 소스에서 cloneDeep 함수를 참고할 수 있으니까 확인해봐라.
